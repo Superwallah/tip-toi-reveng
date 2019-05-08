@@ -25,28 +25,28 @@ dreht sich dabei alles um das ``tttool``, ein Kommandozeilenprogramm mit
 dem man die Tiptoi-Dateien und -Codes erzeugt.
 
 Dieses Buch ist sozusagen das Handbuch zum ``tttool``, aber noch mehr:
-Es erklärt dir allgemeines zur Funktionsweise des Stiftes und wie du
+Es erklärt dir Allgemeines zur Funktionsweise des Stiftes und wie du
 dein eigenes Tiptoi-Projekt verwirklichst.
 
 Rechtliches
 -----------
 
-Eine häufig gestellte Frage ist: Darf ich das überhaupt. Diese Frage
+Eine häufig gestellte Frage ist: Darf ich das überhaupt? Diese Frage
 lässt sich nicht einfach beantworten, und keiner der Autoren ist Jurist.
 
 Was auf jeden Fall gar nicht geht, ist mit dem ``tttool`` ein
 Tiptoi-kompatibles Produkt zu erstellen und so zu tun, als ob es von
-Ravenburger ist.
+Ravenburger sei.
 
-Was sicherlich auch Ärger gibt, ist wenn du dein eiges Tiptoi-Produkt
-erstellst und kommerziell vertreibst, oder damit etwas machst was der
+Was sicherlich auch Ärger gibt, ist, wenn du dein eigenes Tiptoi-Produkt
+erstellst und kommerziell vertreibst, oder damit etwas machst, was der
 Marke “Tiptoi” schadet -- etwa ein eindeutig für Kinder ungeeignetes
 Thema.
 
 Alles andere – Werke für den Eigengebrauch oder als Geschenk,
 Anleitungen online, eine offene Diskussion über die Funktionsweise des
-Stift – hat irgendwer schon mal gemacht. Wir gehen davon aus dass
-Ravensburger davon weiß und sehen, dass Ravensburger uns stillschweigend
+Stiftes – hat irgendwer schon mal gemacht. Wir gehen davon aus, dass
+Ravensburger davon weiß, und sehen, dass Ravensburger uns stillschweigend
 – vielleicht gar wohlwollend – gewähren lässt.
 
 
@@ -71,7 +71,7 @@ will, sollte sich folgende Projekte anschauen, die allesamt auf
 Weiterführende Informationen
 ----------------------------
 
-Das Ziel dieses Buches ist, dir alles nötige über die Bastelei mit dem Tiptoi-Stift zu erklären. Doch dieses Ziel wird vermutlich nie erreicht... solltest du also mehr Informationen brauchen, findest du sie hier:
+Das Ziel dieses Buches ist es, dir alles Nötige über die Bastelei mit dem Tiptoi-Stift zu erklären. Doch dieses Ziel wird vermutlich nie erreicht... solltest du also mehr Informationen brauchen, findest du sie hier:
 
 * Du solltest unbedingt die `tiptoi-Mailingliste <https://lists.nomeata.de/mailman/listinfo/tiptoi>`_ abonnieren. Hier tauschen sich alle Tiptoi-Bastler aus, und irgendwer kann dir sicher weiterhelfen. Auch freuen wir uns sehr zu erfahren, was du so mit dem ``tttool`` auf die Beine gestellt hast.
 
