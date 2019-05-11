@@ -19,7 +19,7 @@ Nun finden sich auf deinem Tiptoi-Stift sicherlich mehrere GME-Dateien. Woher we
 
 Wenn du einfach ein Buch öffnest und mit dem Stift irgendwo hintippst, dann liest der Stift den entsprechenden OID-Code, weiß aber nicht was er damit anfangen soll und wird dich daher auffordern, das Anschaltfeld des Produktes anzutippen.
 
-Jedes Produkt hat so ein Anschaltfeld, und es zeichnet sich dadurch aus, dass es einen OID-Code im Bereich 1 bis 1000 kodiert. Das ist gleichzeitig die Produkt-ID des Produkts, und jedes Tiptoi-Produkt hat eine eigene Produkt-ID.
+Jedes Produkt hat so ein Anschaltfeld. Es zeichnet sich dadurch aus, dass es einen OID-Code im Bereich 1 bis 1000 kodiert. Das ist gleichzeitig die Produkt-ID des Produkts. Jedes Tiptoi-Produkt hat eine eigene Produkt-ID.
 
 Eine GME-Datei enthält auch eine Produkt-ID. Der Stift schaut nun in alle GME-Dateien, die du auf ihn geladen hast, und sucht die GME-Datei mit der entsprechenden Produkt-ID. Wenn er eine solche findet, lädt er sie. Wenn du nun ins Buch tippst, kann der Stift in dieser GME-Datei nachschauen, was er zu tun hat.
 
@@ -29,9 +29,15 @@ Eine GME-Datei enthält auch eine Produkt-ID. Der Stift schaut nun in alle GME-D
 Was steckt in einer GME-Datei?
 ------------------------------
 
-Neben der Produkt-ID, wie gerade eben erklärt, sowie den Audio-Dateien, die der Stift abspielen kann (in der Regel als Ogg-Vorbis, Mono, 22050Hz, aber der Stift versteht auch andere Audioformate wie WAV und MP3) enthält er die Logik, was er wann abzuspielen hat.
+Neben der Produkt-ID sowie den Audio-Dateien, die der Stift abspielen kann, enthält die GME-Datei die Logik, was der Stift wann abzuspielen hat.
 
-In erster Näherung ist das eine einfache Tabelle, die zu jedem OID-Code die Audio-Datei angibt, die abzuspielen ist.
+Die Audio-Dateien müssen in einem Format vorliegen, das der Stift versteht. Unterstützt werden:
+* Ogg-Vorbis (.ogg), Mono (Stereo wird nicht unterstützt), 22050Hz
+* mp3
+* WAV
+* FLAC
+
+Die Logik in der GME-Datei ist in erster Näherung eine einfache Tabelle, die zu jedem OID-Code die Audio-Datei angibt, die abzuspielen ist.
 
 Aber da ist natürlich noch mehr, denn der Stift macht ja nicht immer das gleiche, wenn man auf ein Feld tippt. Tatsächlich enthält diese Tabelle zu jedem OID-Code ein kleines Computer-Programm, dass nach dem Tippen abläuft. Dieses Programm (oder :index:`\ <Skript>`\ *Skript*) kann
 
@@ -40,7 +46,7 @@ Aber da ist natürlich noch mehr, denn der Stift macht ja nicht immer das gleich
  * diese Zahlenwerte in sogennanten :index:`Registern <Register>` ablegen und abrufen und
  * abhängig von diesen Werten unterschiedliche Programschritte abarbeiten.
 
-Die Werte mit denen gerechnet wird sind dabei 16-bit natürliche Zahlen (also 0 bis 65535). Auch die Register (man könnte sie auch Variablen oder Speicherzellen nennen) speichern jeweils genau eine solche Zahl.
+Die Werte, mit denen gerechnet wird, sind dabei 16-bit natürliche Zahlen (also 0 bis 65535). Auch die Register (man könnte sie auch Variablen oder Speicherzellen nennen) speichern jeweils genau eine solche Zahl.
 
 Desweiteren kann eine GME-Datei noch folgendes enthalten:
 
